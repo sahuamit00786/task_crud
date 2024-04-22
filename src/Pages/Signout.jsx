@@ -9,7 +9,7 @@ const Signout = () => {
     const handleSubmit = async(e)=>{
     e.preventDefault()
     try {
-      const res = await fetch('https://task-api-vf9d.vercel.app/api/signup',{
+      const res = await fetch('https://https://task-api-9cyg.onrender.com/api/signup',{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
