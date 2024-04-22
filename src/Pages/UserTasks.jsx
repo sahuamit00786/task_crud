@@ -18,7 +18,7 @@ const UserTasks = () => {
     useEffect(()=>{
         const getUserData = async()=>{
             try {
-                const res = await fetch(`http://localhost:3000/api/getTask/${id}`,{
+                const res = await fetch(`https://task-api-vf9d.vercel.app/api/getTask/${id}`,{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json'
@@ -57,7 +57,7 @@ const UserTasks = () => {
         console.log(completeData)
 
         try {
-            const res = await fetch('http://localhost:3000/api/newTask',{
+            const res = await fetch('https://task-api-vf9d.vercel.app/api/newTask',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json',
@@ -90,7 +90,7 @@ const UserTasks = () => {
     const handleReAssign = async(id)=>{
 
         try {
-            const res = await fetch(`http://localhost:3000/api/reAssignTask/${id}`,{
+            const res = await fetch(`https://task-api-vf9d.vercel.app/api/reAssignTask/${id}`,{
                 method:'PUT',
                 headers:{
                     'Content-Type':'application/json',
@@ -115,7 +115,7 @@ const UserTasks = () => {
         // e.preventDefault()
         settaskKey(id)
         try {
-            const res = await fetch(`http://localhost:3000/api/editTask/${id}`,{
+            const res = await fetch(`https://task-api-vf9d.vercel.app/api/editTask/${id}`,{
                 method:'PUT',
                 headers:{
                     'Content-Type':'application/json',
@@ -140,7 +140,7 @@ const UserTasks = () => {
      const handleDelete = async(id)=>{
         
         try {
-            const res = await fetch(`http://localhost:3000/api/deleteTask/${id}`,{
+            const res = await fetch(`https://task-api-vf9d.vercel.app/api/deleteTask/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json'
