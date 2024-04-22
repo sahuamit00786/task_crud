@@ -12,7 +12,7 @@ const Header = () => {
 
   const handleSignOut = async()=>{
     try {
-        const res = await fetch('https://task-api-vf9d.vercel.app/api/signout',{
+        const res = await fetch('https://task-api-9cyg.onrender.com/api/signout',{
         method:'POST',
         headers:{
             'Content-Type':'application/json',
