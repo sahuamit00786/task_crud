@@ -15,7 +15,7 @@ const AssignTask = () => {
     useEffect(()=>{
         const getAllUsers = async()=>{
             try {
-                const res = await fetch('https://task-api-9cyg.onrender.comapi/users',{
+                const res = await fetch('https://task-api-9cyg.onrender.com/api/users',{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',
