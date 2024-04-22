@@ -15,7 +15,7 @@ const AssignTask = () => {
     useEffect(()=>{
         const getAllUsers = async()=>{
             try {
-                const res = await fetch('http://localhost:3000/api/users',{
+                const res = await fetch('https://task-api-vf9d.vercel.app/api/users',{
                 method:'GET',
                 headers:{
                     'Content-Type':'application/json',
@@ -38,7 +38,7 @@ const AssignTask = () => {
     const handleDeleteUser = async(id) =>{
         // console.log(id)
             try {
-                const res = await fetch(`http://localhost:3000/api/deleteUser/${id}`,{
+                const res = await fetch(`https://task-api-vf9d.vercel.app/api/deleteUser/${id}`,{
                     method:'DELETE',
                     headers:{
                         'Content-Type':'application/json'
