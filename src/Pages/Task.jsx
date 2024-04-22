@@ -16,7 +16,7 @@ const Task = () => {
         const tasks = async()=>{
             
             try {
-                const res = await fetch(`https://task-api-vf9d.vercel.app/api/getTask/${currentUser._id}`,{
+                const res = await fetch(`https://task-api-9cyg.onrender.com/api/getTask/${currentUser._id}`,{
                     method:'GET',
                     headers:{
                         'Content-Type':'application/json'
@@ -48,7 +48,7 @@ const Task = () => {
         try {
             const completeTime = new Date().toISOString().slice(0, 19).replace('T', ' '); // Format: YYYY-MM-DD HH:mm:ss
             // console.log(completeTime)
-            const res = await fetch(`https://task-api-vf9d.vercel.app/api/completeTask/${id}`,{
+            const res = await fetch(`https://task-api-9cyg.onrender.com/api/completeTask/${id}`,{
                 method:'PUT',
                 headers:{
                     'Content-Type':'application/json',
