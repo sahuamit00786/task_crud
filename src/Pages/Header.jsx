@@ -41,7 +41,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
             <div className="flex items-center">
                 <Link to="/">
-                    <img src='http://oikoshreemgroup.com/wp-content/uploads/2023/01/logo-10-1.png' alt="logo" className="w-35 m-3 h-20" />
+                    <img src='https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=800' alt="logo" className="w-35 m-3 h-20" />
                 </Link>
             </div>
             <div className="flex text-[#A18A30] hover:text-[#B28A50] font-semibold text-[15px] sm:text-s gap-5 sm:gap-9 sm:gap-12 pr-[40px] md:pr-[80px] items-center">
